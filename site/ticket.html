@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tickets Page</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Подключаем стили, если есть -->
+</head>
+<body>
+
+<div class="container">
+  <h1>Your Tickets</h1>
+
+  <table>
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Title</th>
+      <th>Assignee</th>
+      <th>Status</th>
+    </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+
+  <div class="update-status-form">
+    <h2>Update Task Status</h2>
+    <form>
+      <label for="taskId">Task ID:</label>
+      <input type="text" id="taskId" name="taskId" required>
+
+      <label for="newStatus">New Status:</label>
+      <select id="newStatus" name="newStatus">
+        <option value="Open">Open</option>
+        <option value="In Progress">In Progress</option>
+        <option value="Closed">Closed</option>
+      </select>
+
+      <button type="submit">Update Status</button>
+    </form>
+  </div>
+</div>
+
+</body>
+</html>
